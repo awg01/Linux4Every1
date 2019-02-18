@@ -1,0 +1,11 @@
+1. Download the firefox developer edition here:
+   https://www.mozilla.org/en-US/firefox/developer/
+
+2. Extract the file manually to /opt/firefox/
+
+3. Open Nautilus: Go to Edit->Preferences-> Behavior-> click on “Run executable text files when they are opened”
+    Go to the file ‘firefox’ in /opt/firefox/
+    Right click and select Properties–> Permissions–> Execute: Allow executing file as a program.
+    Open terminal and type:
+
+gnome-desktop-item-edit ~/.local/share/applications --create-new

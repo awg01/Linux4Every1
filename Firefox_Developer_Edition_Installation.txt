@@ -1,11 +1,47 @@
+Prerequisites
+1. File manager nautilus, nemo etc. (sudo apt install nautilus)
+2  gnome-panel (sudo apt-get install gnome-panel) 
+
 1. Download the firefox developer edition here:
    https://www.mozilla.org/en-US/firefox/developer/
 
-2. Extract the file manually to /opt/firefox/
+2. Open nautilus file manager is sudo mode by using following command
+   sudo nautilus
 
-3. Open Nautilus: Go to Edit->Preferences-> Behavior-> click on “Run executable text files when they are opened”
-    Go to the file ‘firefox’ in /opt/firefox/
-    Right click and select Properties–> Permissions–> Execute: Allow executing file as a program.
-    Open terminal and type:
+3. Make Folder firefox-developer inside /opt to save extracted files
+   a. Using command line
+    sudo mkdir /opt/firefox-developer 
+  
+   b. Using GUI
 
-gnome-desktop-item-edit ~/.local/share/applications --create-new
+4. Extract the file manually to /opt/firefox-developer/
+   a. Using command line 
+      tar xvjf <.tar_name>
+
+   b. Using archieve manager
+
+5. Add Extracted folder firefox to /opt/firefox-developer
+
+6. Change permission for /opt/firefox-developer folder 
+   a. Using terminal
+      sudo chmod 777 -R /opt/firefox-developer
+
+      we are using -R for repetitive changing because we have to change permissions for contents inside folders also.   
+
+7. Open /opt/firefox-developer/firefox in file using nautlus file manager
+   a. Select file named firefox
+   b. Open Properties>>Permissions tab >> Allow Executing file as program >> Close 
+
+8. Open Nautilus: 
+    a. Click on files icon at upper-left corner of screen >> Preferences >> Behaviour tab 
+    b. click on “Run executable text files when they are opened”
+    
+9. Open terminal because we have to create launcher for opening application:
+   gnome-desktop-item-edit ~/.local/share/applications --create-new
+
+10. new dialog-box will be appeared
+    a. Name>> Give any suitable name for shortcut e.g. Firefox-Developer
+    b. Command>> Click on Browse and select path of /opt/firefox-developer/firefox/firefox file
+    c. Comment>> Add suitable comment for more-info about application
+    d. icon>> Click on icon at left side box and select your custom icon.
+    

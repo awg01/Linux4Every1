@@ -1,0 +1,57 @@
+Step 1:- Create package.json file
+
+Step 2:- Add following contents inside it
+ {
+   "name": "name-of-your-project",
+   "version": "1.0.0",
+   "dependencies":{
+      "express": "^4.13.4",
+      "mysql": "^2.10.2"  
+  
+   }   
+}
+
+3. Execute the following command to generate node-modules for our project
+   
+   npm install
+
+4. Create javascript file for writing logic 
+     filename.js
+
+var express = require('express')
+var mysql = require('mysql')
+var app = express();
+
+var connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'your_database_user_name',
+    password: 'your_password',
+    database: 'sampleDB'	
+});
+
+connection.connect(function(error){
+  if(!!error){
+    console.log('Error')
+  }else{
+    console.log("Connected")  
+  }
+})
+
+app.get('/', function(req, res){
+   connection.query("select * from student", function(error, rows, fields){
+      if(!!error){
+        console.log('Error in the query');
+      }else{
+        console.log(rows)
+	process.exit(1)      
+      }
+   })
+})
+
+app.listen(8080)
+
+
+4. Executing File
+
+   node filename.js
+      

@@ -1,0 +1,5 @@
+1. Displaying line numbers command
+   set number
+
+2. Going to particular line in vim editor
+  type line number and press Shift+g

@@ -1,0 +1,11 @@
+Why we can't use void main() in Linux ?
+
+https://www.quora.com/Why-cant-one-use-void-main-in-Linux
+
+It also valid, if you write main() like this
+
+int main()
+{
+  //its valid without return statement
+  //there is no need of explicit return 
+}

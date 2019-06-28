@@ -1,0 +1,3 @@
+https://connectwww.com/how-to-solve-realtek-rtl8723be-weak-wifi-signal-problem-in-ubuntu/4625/
+
+Realtek RTL8723BE is wireless network adapter. It will work well with windows but it will cause weak wifi signal problem in ubuntu based linux distributions. And the wifi is only works when you sit next to your modem. Realtek RTL8723BE wireless network adapter has problems in managing the antenna on Linux. This will lead the weak wifi signal problem.

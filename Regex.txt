@@ -1,6 +1,6 @@
-A regular expression is a sequence of characters that define a serch pattern.
+A regular expression is a sequence of characters that define a search pattern.
 Regular expressions are used to perform pattern-matching and "search-and-replace" functions on text.
-It is not a seprate language but used in every programming language like C++, Java and Python as a part of them.
+It is not a separate language but used in every programming language like C++, Java and Python as a part of them.
 A regular expression consists of a pattern string and, potentially, a flag specifying further detail on how the pattern should be matched.
 
 

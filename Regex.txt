@@ -88,6 +88,6 @@ Quantifiers
 
 Assertions
 •	a(?=b): Matches a only if a is followed by b.
-•	a(?!b): Matches a only if a is not followed by b.
+•	a(?!b): Matches a only if a is not followed by b. 
 
 
